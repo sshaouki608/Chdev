@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1a">
+  <meta name="description" content="بوابة رسالة فك بن نقاط التشغيل — أدخل كود التفعيل للوصول إلى رسالتك.">
+  <title>رسالة فك بن نقاط التشغيل</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="الرئيسية">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 10.5V7a4.5 4.5 0 0 1 9 0v3.5M6 10.5h12a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 18 21.5H6A1.5 1.5 0 0 1 4.5 20v-8A1.5 1.5 0 0 1 6 10.5Z"/></svg></span>
+      <span><strong>رسالة فك بن نقاط التشغيل</strong><small>بوابتك إلى رسالتك الخاصة</small></span>
+    </a>
+    <span class="secure-label"><i></i> بوابة التفعيل</span>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero-copy">
+      <div class="eyebrow"><span></span> تجربة تفعيل بسيطة وسريعة</div>
+      <h1>خطوة واحدة<br><span>تفصلك عن رسالتك</span></h1>
+      <p>أدخل كود التفعيل الذي حصلت عليه، وتابع للحصول على رسالتك الجاهزة للنسخ.</p>
+      <div class="trust-row"><span><b>01</b> أدخل الكود</span><span class="trust-line"></span><span><b>02</b> تحقق من التفعيل</span><span class="trust-line"></span><span><b>03</b> انسخ رسالتك</span></div>
+    </section>
+
+    <section class="panel" aria-live="polite">
+      <div class="panel-glow"></div>
+      <div class="panel-content" id="entry-view">
+        <div class="step-icon"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></div>
+        <div class="panel-kicker">منطقة آمنة للتفعيل</div>
+        <h2>أدخل كود التفعيل</h2>
+        <p class="panel-desc">اكتب الكود الذي وصلك كما هو تمامًا.</p>
+        <form id="activation-form" novalidate>
+          <label for="activation-code">كود التفعيل</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7h8M8 12h8M8 17h5"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg>
+            <input id="activation-code" name="code" type="text" placeholder="مثال: XXXX-XXXX-XXXX" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="48" required>
+          </div>
+          <p class="error-message" id="error-message" role="alert"></p>
+          <button class="primary-button" type="submit"><span>تحقق من الكود</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+        </form>
+        <div class="panel-foot"><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.5 3.2 7.7 7.5 9.5 4.3-1.8 7.5-5 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg> لا تشارك كود التفعيل مع الآخرين</div>
+      </div>
+
+      <div class="panel-content result-view hidden" id="success-view">
+        <div class="success-orbit"><div class="success-icon"><svg viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></svg></div></div>
+        <div class="success-tag">تم التحقق بنجاح</div>
+        <h2>تم التفعيل بنجاح!</h2>
+        <p class="panel-desc">كودك صالح. أصبحت رسالتك جاهزة الآن.</p>
+        <div class="progress-track"><span></span></div>
+        <p class="small-note">جارٍ تجهيز رسالتك...</p>
+      </div>
+
+      <div class="panel-content message-view hidden" id="message-view">
+        <div class="step-icon message-icon"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
+        <div class="success-tag">اكتملت عملية التفعيل</div>
+        <h2>رسالتك جاهزة</h2>
+        <p class="panel-desc">يمكنك نسخ النص التالي واستخدامه.</p>
+        <div class="message-box"><div class="message-label"><span></span> نص الرسالة</div><p id="message-text"></p></div>
+        <button class="primary-button copy-button" id="copy-button" type="button"><svg viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg><span>نسخ الرسالة</span></button>
+        <p class="copy-feedback" id="copy-feedback" role="status"></p>
+        <button class="text-button" id="restart-button" type="button">العودة إلى البداية</button>
+      </div>
+    </section>
+    <p class="page-note"><span>✦</span> تجربة سهلة، واضحة، ومصممة لأجلك</p>
+  </main>
+  <footer><span>© <span id="year"></span> رسالة فك بن نقاط التشغيل</span><span>صُممت بعناية <b>✦</b></span></footer>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
