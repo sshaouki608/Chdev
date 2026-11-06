@@ -1,26 +1,26 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#080d1a">
+<meta name="description" content="افتح الموقع للاطلاع على رسالتك الخاصة.">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>رسالتك الخاصة</title>
-<link rel="icon" href="favicon.svg?v=20261106-5">
-<link rel="stylesheet" href="style.css?v=20261106-5">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg?v=20261106-6" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=20261106-6">
+<script src="config.js?v=20261106-6"></script>
+<script src="app.js?v=20261106-6" defer></script>
 </head>
 <body>
-<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
-<header class="topbar"><a class="brand" href="./"><span class="brand-mark">✦</span><span><strong>رسالة خاصة لك</strong><small>بوابتك إلى رسالتك</small></span></a><span class="welcome-label"><i></i> أهلًا بك</span></header>
+<div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+<header class="topbar"><a class="brand" href="./"><span class="brand-mark">✦</span><span><strong>رسالة فك بن نقاط التشغيل</strong><small>رسالتك الخاصة في انتظارك</small></span></a><span class="welcome-label"><i></i> أهلًا بك</span></header>
 <main class="page-shell">
 <section class="intro"><div class="eyebrow"><span></span> رسالتك في انتظارك</div><h1>مرحبًا بك<br><span>رسالتك على بُعد خطوة</span></h1><p>اضغط على الزر للدخول والاطلاع على الرسالة. يمكنك نسخها بسهولة بعد فتحها.</p><div class="steps"><span><b>01</b> الدخول</span><i></i><span><b>02</b> قراءة الرسالة</span><i></i><span><b>03</b> النسخ</span></div></section>
 <section class="panel" aria-live="polite">
-<div class="panel-content" id="entry-view"><div class="icon-tile"><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></div><div class="panel-kicker">أهلًا وسهلًا بك</div><h2>جاهز لعرض رسالتك؟</h2><p class="panel-desc">اضغط على الزر التالي للانتقال إلى رسالتك الخاصة.</p><button class="primary-button" id="enter-button" type="button"><span>الدخول إلى الموقع</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p class="panel-foot">✦ تجربة بسيطة وسهلة</p></div>
-<div class="panel-content message-view hidden" id="message-view"><div class="icon-tile"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div><div class="panel-kicker">تم فتح رسالتك</div><h2>رسالتك الخاصة</h2><p class="panel-desc">يمكنك قراءة النص ونسخه باستخدام الزر أدناه.</p><div class="message-box"><div class="message-label"><span></span> نص الرسالة</div><p id="message-text"></p></div><button class="primary-button copy-button" id="copy-button" type="button"><span>نسخ الرسالة</span></button><p class="copy-feedback" id="copy-feedback" role="status"></p><button class="text-button" id="back-button" type="button">العودة إلى البداية</button></div>
-</section><p class="page-note">✦ نتمنى لك تجربة موفقة</p>
+<div class="panel-content" id="entry-view"><div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></div><div class="panel-kicker">أهلًا وسهلًا بك</div><h2>جاهز لعرض رسالتك؟</h2><p class="panel-desc">اضغط على الزر التالي للانتقال إلى رسالتك الخاصة.</p><button class="primary-button" id="enter-button" type="button"><span>الدخول إلى الموقع</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p class="panel-foot">✦ تجربة بسيطة وسهلة</p></div>
+<div class="panel-content message-view hidden" id="message-view"><div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div><div class="panel-kicker">تم فتح رسالتك</div><h2>رسالتك الخاصة</h2><p class="panel-desc">يمكنك قراءة النص ونسخه باستخدام الزر أدناه.</p><div class="message-box"><div class="message-label"><span></span> نص الرسالة</div><p id="message-text"></p></div><button class="primary-button copy-button" id="copy-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg><span>نسخ الرسالة</span></button><p class="copy-feedback" id="copy-feedback" role="status"></p><button class="text-button" id="back-button" type="button">العودة إلى البداية</button></div>
+</section><p class="page-note">✦ تجربة سهلة وواضحة ومصممة لأجلك</p>
 </main>
-<footer><span>© <span id="year"></span> رسالة خاصة لك</span><span>صُممت بعناية ✦</span></footer>
-<script src="config.js?v=20261106-5"></script><script src="app.js?v=20261106-5"></script>
+<footer><span>© <span id="year"></span> رسالة فك بن نقاط التشغيل</span><span>صُممت بعناية ✦</span></footer>
 </body></html>
