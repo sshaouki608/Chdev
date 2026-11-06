@@ -15,8 +15,7 @@ window.SITE_CONFIG = {
 
   // أضف الأكواد أو احذفها من هذه القائمة.
   codes: [
-    "PLAY-CHDEV-53"
-  ],
+    "PLAY-CHDEV-53"],
 
   // اسم مفتاح التخزين المحلي — لا تغيّره بعد بدء توزيع الأكواد.
   storageKey: "chdev_activation_used_v1"
