@@ -19,7 +19,7 @@
   messageText.textContent = config.message || "لم يتم إعداد الرسالة بعد.";
 
   function normalizeCode(value) {
-    return value.trim().replace(/\s+/g, "").toUpperCase();
+    return value.normalize("NFKC").replace(/[\s\-‐‑‒–—_]+/g, "").toUpperCase();
   }
 
   function getUsedCodes() {
